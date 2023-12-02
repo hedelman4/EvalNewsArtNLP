@@ -39,6 +39,7 @@ async function performAction() {
     subjectivity = meanCloudData['subjectivity']
     postData('/add', {text:text, score_tag:score_tag, subjectivity:subjectivity})
     updateUI()
+    return 'success'
 }
 
 document.getElementById('submit').addEventListener('click', performAction);
