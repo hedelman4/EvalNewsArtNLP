@@ -1,8 +1,13 @@
-//import { checkForName } from './js/nameChecker'
-//import { handleSubmit } from './js/formHandler'
+import { checkForName } from './js/nameChecker'
+import { handleSubmit } from './js/formHandler'
 let text = ''
 let score_tag = ''
 let subjectivity = ''
+import './styles/resets.scss'
+import './styles/base.scss'
+import './styles/footer.scss'
+import './styles/form.scss'
+import './styles/header.scss'
 
 /*
 console.log(checkForName);
@@ -53,4 +58,12 @@ const updateUI = async () => {
     }catch(error){
       console.log("error", error);
     }
+  }
+
+  export {
+    checkForName,
+    handleSubmit,
+    postData,
+    performAction,
+    updateUI
   }

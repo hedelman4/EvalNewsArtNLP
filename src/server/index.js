@@ -19,8 +19,8 @@ console.log(__dirname)
 
 
 app.get('/', function (req, res) {
-    console.log('res success')
-    // res.sendFile('dist/index.html')
+    // console.log('res success')
+    res.sendFile('dist/index.html')
     // res.sendFile(path.resolve('dist/index.html'))
 })
 
